@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Répertoire téléphonique</title>
+		<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+	</head>
+	<body>
+	  <h1 style="background-color:#6E6E6E;">Répertoire téléphonique </h1>
+		<h2 style="color:#6E6E6E;">Ajouter un numéro</h2>
+		<form>
+				<p>Le numéro de téléphone <strong>+33 {{numtel}}</strong> a bien été ajouté.</p>
+
+	</body>
+	<footer> <input type=button onclick=window.location.href="{{ url_for('menu') }}"; value= "Retourner au Menu"; style="color:#F7F8E0; background-color:#6E6E6E; width: 250px; height: 70px; border-radius: 15%; border: black 10px double; font-size: 20px; margin:15px 15px;"/>
+	</footer>
+</html>

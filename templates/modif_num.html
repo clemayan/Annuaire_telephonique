@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Répertoire téléphonique</title>
+		<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+	</head>
+	<body>
+	  <h1 style="background-color:#6E6E6E;">Répertoire téléphonique </h1>
+		<h2 style="color:#6E6E6E;">Modification de contact</h2>
+		<form action="{{ url_for('modif_num', nom1=nomrecherche) }}"method="post">
+				<p>Nouveau numéro de téléphone de <strong>{{nom1}}</strong>: +33<input type = "text"  minlength="9" maxlength="9" name = "nouvnum" required/>
+				<input type = "submit" value = "Valider" /><br></p>
+		</form>
+
+	</body>
+	<footer> <input type=button onclick=window.location.href="{{ url_for('menu') }}"; value= "Retourner au Menu"; style="color:#F7F8E0; background-color:#6E6E6E; width: 250px; height: 70px; border-radius: 15%; border: black 10px double; font-size: 20px; margin:15px 15px;"/>
+	</footer>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Répertoire téléphonique</title>
+		<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+	</head>
+	<header>
+	</header>
+	<body>
+	  <h1 style="background-color:#6E6E6E;" >Répertoire téléphonique </h1>
+		<h2 style="color:#6E6E6E;" id="retourneraumenu">Menu</h2>
+	  <div class=boutonmenu>
+	  <input type=button onclick=window.location.href="{{ url_for('ajout_num') }}"; value= "ajouter un numéro    ";
+	  style="color:#F7F8E0; background-color:#6E6E6E; padding:25px; border-top-left-radius: 40%; border: black 10px double; font-size: 20px; margin-left:370px"/>
+
+	 <input type=button onclick=window.location.href="{{ url_for('recherche_num') }}"; value= "rechercher un numéro";
+	  style="color:#F7F8E0; background-color:#6E6E6E; padding:25px; border-top-right-radius: 40%; border: black 10px double; font-size: 20px; margin-left:10px;"/>
+	</div>
+
+    <br>
+
+	 <input type=button onclick=window.location.href="{{ url_for('tous_contacts') }}"; value= "afficher le contenu de l'annuaire"; 
+	  style="color:#F7F8E0; background-color:#6E6E6E; width: 540px; height: 130px;; border-radius: 15%; border: black 10px double; font-size: 20px; margin:15px 370px;"/>
+
+	</body>
+
+</html>

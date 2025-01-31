@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Répertoire téléphonique</title>
+		<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+	</head>
+	<body>
+	  <h1 style="background-color:#6E6E6E;">Répertoire téléphonique </h1>
+		<h2 style="color:#6E6E6E;">Rechercher un numéro</h2>
+		<form>
+		<div style="width: 600px; height: 150px ;border: 3px solid #6E6E6E; text-align: center;background: #F7F8E0; margin-left:320px;font-size: 30px;">
+				Nom: <strong>{{nomrecherche}}</strong> </br>
+				</br> Numéro de téléphone: <strong>+33 {{numtrouve}}</strong> </div>
+
+				<input type=button onclick=window.location.href="{{ url_for('modif_num', nom1=nomrecherche, nomrecherche=nomrecherche) }}"; value= "Modifier le contact"; style=" margin-left:320px; margin-top:15px;color:#F7F8E0; background-color:#6E6E6E; width: 250px; height: 70px; border-radius: 15%; border: black 10px double; font-size: 20px;"/>
+				<input type=button onclick=window.location.href="{{ url_for('supp_num', nom=nomrecherche, num=numtrouve) }}"; value= "Supprimer le contact"; style="margin-left:75px;margin-top:15px; color:#F7F8E0; background-color:#6E6E6E; width: 250px; height: 70px; border-radius: 15%; border: black 10px double; font-size: 20px;"/></br></br>
+				<div class="alert" >
+				  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+				  <strong>Attention !</strong> Cette action est irréversible !
+				</div>
+				</br>
+				</br>
+
+	</body>
+	<footer> <input type=button onclick=window.location.href="{{ url_for('menu') }}"; value= "Retourner au Menu"; style="color:#F7F8E0; background-color:#6E6E6E; width: 250px; height: 70px; border-radius: 15%; border: black 10px double; font-size: 20px; margin:15px 15px;"/>
+	</footer>
+</html>

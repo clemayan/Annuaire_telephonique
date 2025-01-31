@@ -1,0 +1,109 @@
+h1{
+	text-align: center;
+}
+
+
+/* boite alerte */
+.alert {
+
+  opacity: 1;
+  transition: opacity 0.6s;
+	float: inline-end;
+  padding: 5px;
+  background-color: #f44336;
+  color: white;
+}
+
+/* bouton*/
+.closebtn {
+  margin-right: 0px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+/* changement de couleur au passage*/
+.closebtn:hover {
+  color: black;
+}
+body{
+	background-color:#F7F8E0;
+	background-image:url("phone.png");
+
+
+	background-repeat:no-repeat;
+	background-position: top left 10 px 20px;
+	background-size:70px;
+	font-family:"Trebuchet MS",Times New Roman, serif;
+}
+
+
+
+
+h1{
+	color:#F7F8E0;
+	text-decoration:underline;
+	font-size: 60px;
+	text-align: center;
+
+}
+
+p{
+
+	text-align:center;
+	font-size:40px;
+
+
+
+
+}
+
+ol{	font-size: 15px;
+	font-weight: bold;
+
+}
+
+
+
+
+h2{
+	color:#6E6E6E;
+	font-size: 50px;
+	text-align: center;
+}
+
+p {
+  animation-duration: 2s;
+  animation-name: glissement;
+  animation-iteration-count: 1;
+}
+@keyframes glissement {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.boutonmenu:hover{
+	color: #fff0e6
+}
+
+table
+{
+    border-collapse: separate;
+	height: 250px;
+	width: 300px;
+	margin-left:370px;
+}
+td
+{
+    border: 1px solid #6E6E6E;
+}

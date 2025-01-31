@@ -1,0 +1,13 @@
+Mise en marche du programme :
+- ouvrir le fichier python "rep_tel.py"
+- lancer le programme python
+- si dès le lancement du programme s'affiche "OSError: [Errno 48] Address already in use" changer le port pour 5002 à la ligne 231
+- entrer "localhost:5001" dans la barre de recherche
+
+Sur le site :
+- chaque page est représentée avec le titre correspondant à l'action choisie
+- un lien vers la page d'accueil (menu) est possible sur chaque page
+- lors de la suppression : il s'agit du dernier contact entré dans la table avec ce nom qui sera supprimé
+- l'affichage du contenu affiche les 10 premiers contacts de l'annuaire
+- la modification du contact ne fonctionne pas
+- un numéro ne peut pas commencer par un 0
